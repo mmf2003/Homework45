@@ -16,10 +16,17 @@ const appSlice = createSlice({
         toggleTheme: (state) => {
             state.theme = state.theme === "light" ? "dark" : "light";
         },
+
+        changeRole: (state) => {
+            state.user.role =
+                state.user.role === "Frontend Developer"
+                    ? "React Developer"
+                    : "Frontend Developer";
+        },
     },
 });
 
-export const { toggleTheme } = appSlice.actions;
+export const { toggleTheme, changeRole } = appSlice.actions;
 
 export const selectUser = (state) => state.app.user;
 export const selectTheme = (state) => state.app.theme;

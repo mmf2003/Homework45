@@ -44,3 +44,32 @@
     border-radius: 8px;
     background-color: #f1f1f1;
 }
+
+.role-button {
+    margin-top: 15px;
+    padding: 10px 18px;
+
+    border: 2px solid #646cff;
+    border-radius: 8px;
+
+    background-color: transparent;
+    color: #646cff;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        transform 0.2s;
+}
+
+.role-button:hover {
+    background-color: #646cff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.role-button:active {
+    transform: translateY(0);
+}
